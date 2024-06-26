@@ -62,26 +62,28 @@ Lists loaded DLLs for each process, revealing dependencies, injected DLLs, and p
 
 **Key Findings**  
 
-*Suspicious Processes*  
+**Suspicious Processes**  
 huuhroi.exe: Unrecognized process with high threads and handles count.  
 vssadmin.exe: Legitimate utility but suspicious due to quick start and exit.  
 mscorsvw.exe: Multiple instances with high threads and handles.  
 SearchIndexer.exe: High resource consumption.  
 pythonw.exe: Presence of Python processes may indicate suspicious activity.  
 sppsvc.exe: Unexpected invocation of software protection service.  
-*Hidden and Malicious Processes*  
+
+**Hidden and Malicious Processes**  
 inject-x86.exe / inject-x64.exe: Code injection processes.  
 TeslaCrypt2.exe: Associated with ransomware.  
 cmd.exe: Abused for executing malicious commands.  
 
-*Suspicious Drivers*  
+**Suspicious Drivers**  
 spsys.sys, rspndr.sys, secdrv.SYS, NDProxy.SYS, HTTP.sys, afd.sys, usbohci.sys, tcpip.sys, atapi.sys: Potentially malicious or manipulated drivers. 
 
-*DLL Anomalies*  
+**DLL Anomalies**  
 Unusual load times and unexpected DLL names or locations may indicate injected or dynamically loaded malicious DLLs.  
 
 **Conclusion**  
 This project demonstrates the use of Linux and the Volatility Framework for conducting comprehensive memory forensics on Windows systems. The analysis reveals several suspicious and potentially malicious activities, highlighting the importance of memory forensics in identifying security incidents.  
+
 **Usage**  
 Clone the repository:  
   git clone https://github.com/anashashme/windows-memory-forensics-using-linux.git  
